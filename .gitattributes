@@ -1,0 +1,6 @@
+# 合并时保留 PTTApp 分支版本（忽略 main 分支的这些文件）
+Docs/** merge=ours
+project.yml merge=ours
+NRL21_ESP32_IMPLEMENTATION.md merge=ours
+.env merge=ours
+Keys/** merge=ours

@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CACB15521D2F21024F8B3DA /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86064E9108705A5F65856BCF /* WatchKit.framework */; };
+		0EFF6B9DB36C0248BB85C0AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF01C81DCDF3ADF4D9D0F61 /* Preview Assets.xcassets */; };
+		1B7690C3F4DCC62137C88954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE47E97108C76A8A16D1712 /* Assets.xcassets */; };
+		1E13286FCFB2B8D1AFA4F8AD /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BEA5B977FEEF93AE94F2F8 /* WatchConnectivity.framework */; };
+		2DCA6977C1DD8E8FD11247CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD01A61C9C5C4660839753B /* AVFoundation.framework */; };
+		3464CC33250C95B6AA769B14 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7D8F70403C1FAB6C6AAA8A /* WatchConnectivity.framework */; };
+		39EB11B4FB8786CB31091EC8 /* PTTWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F5ED0A32464C9ECCCFCF9 /* PTTWatchApp.swift */; };
+		4BCC788DE9DAF6113C93598D /* PTTInfra in Frameworks */ = {isa = PBXBuildFile; productRef = 30A264DDE54D9728C7B816A0 /* PTTInfra */; };
+		514534535D387B9B75A5E8DE /* PTTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83612A19C307200BB7F6B114 /* PTTViewModel.swift */; };
+		5A0EFB6C4DD3657EA2064A0B /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED7DB2C611018B1E7E1D028 /* WatchSessionManager.swift */; };
+		5EDC591B424339D109A4B928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C6A78F021C555EA784E790 /* ContentView.swift */; };
+		90953B14280E5321B9257D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8B9BBA7F9BFD82EE75C38A /* Assets.xcassets */; };
+		9818484AC9C0027D0D569373 /* PTTMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DFEFDFBD187390C9E21D6B /* PTTMainView.swift */; };
+		9AEBDD98EAAB8A1C68DAB64E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7B42370398A334ABE96D05 /* Foundation.framework */; };
+		A1B2C3D4E5F60718192A3B4C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6071819A2B3C4D5 /* AboutView.swift */; };
+		A1B2C3D4E5F60718192A3B4D /* LocationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6071819A2B3C4D6 /* LocationModels.swift */; };
+		A1B2C3D4E5F60718192A3B4E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6071819A2B3C4D7 /* LocationService.swift */; };
+		A1B2C3D4E5F60718192A3B50 /* LocationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6071819A2B3C4D9 /* LocationTabView.swift */; };
+		A1B2C3D4E5F60718192A3B51 /* CallsignTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F6071819A2B3C4DA /* CallsignTagsView.swift */; };
+		A1B2C3D4E5F60718192A3B52 /* UpdateAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F6071819A2B3C4DB /* UpdateAlertView.swift */; };
+		A1B2C3D4E5F60718192A3B53 /* AppUpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F6071819A2B3C4DC /* AppUpdateService.swift */; };
+		A78BD4D3B7D7C6190389E20B /* WatchAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8993DC36D11E548630A1BD /* WatchAudioManager.swift */; };
+		AC5527C35E66DE9ED91847FD /* PTTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1443E6C8EE524AE16A5C7D /* PTTApp.swift */; };
+		D65842CA2F248865006BDE2A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65842C92F248865006BDE2A /* WidgetKit.framework */; };
+		D65842CC2F248865006BDE2A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65842CB2F248865006BDE2A /* SwiftUI.framework */; };
+		D65842DB2F248866006BDE2A /* PTTLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D65842C82F248865006BDE2A /* PTTLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E5ED3BBEEDD47B69C58ED674 /* PTTCodec in Frameworks */ = {isa = PBXBuildFile; productRef = 7E396BE9728EC38C06AD87CA /* PTTCodec */; };
+		E9311566E125E1FA05442AAA /* WatchPTTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09CFEBAC6DCCAD458D62852 /* WatchPTTViewModel.swift */; };
+		LA003AA1B2C3D4E5F6071819 /* PTTActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = LA001AA1B2C3D4E5F6071819 /* PTTActivityAttributes.swift */; };
+		LA004AA1B2C3D4E5F6071819 /* PTTLiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = LA002AA1B2C3D4E5F6071819 /* PTTLiveActivityService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D65842D92F248866006BDE2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9CD220A9810C74E3A772E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65842C72F248865006BDE2A;
+			remoteInfo = PTTLiveActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D65842DC2F248866006BDE2A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D65842DB2F248866006BDE2A /* PTTLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000D1DFF889E483C607F76D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10BEA5B977FEEF93AE94F2F8 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = "<group>"; };
+		12E6A734BE9C73D17EFB4F57 /* Pods-PTTApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTApp.release.xcconfig"; path = "Target Support Files/Pods-PTTApp/Pods-PTTApp.release.xcconfig"; sourceTree = "<group>"; };
+		1F07095222D405F1005E8B90 /* PTTWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7B42370398A334ABE96D05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2D43D036296FA0AC0378A725 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE47E97108C76A8A16D1712 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PTTWatch/Assets.xcassets; sourceTree = "<group>"; };
+		32C6A78F021C555EA784E790 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = PTTWatch/ContentView.swift; sourceTree = "<group>"; };
+		3ED7DB2C611018B1E7E1D028 /* WatchSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		507F5ED0A32464C9ECCCFCF9 /* PTTWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PTTWatchApp.swift; path = PTTWatch/PTTWatchApp.swift; sourceTree = "<group>"; };
+		5DD01A61C9C5C4660839753B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = "<group>"; };
+		5E8993DC36D11E548630A1BD /* WatchAudioManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatchAudioManager.swift; path = PTTWatch/WatchAudioManager.swift; sourceTree = "<group>"; };
+		602101E12421B32FCB44F963 /* PTTInfra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PTTInfra; path = Packages/PTTInfra; sourceTree = SOURCE_ROOT; };
+		83612A19C307200BB7F6B114 /* PTTViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTViewModel.swift; sourceTree = "<group>"; };
+		86064E9108705A5F65856BCF /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = "<group>"; };
+		8C7D8F70403C1FAB6C6AAA8A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = "<group>"; };
+		96EDB3560605921C5BF40C41 /* PTTApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PTTApp.entitlements; sourceTree = "<group>"; };
+		9D0AC8D5ABB2C8B08AACDB99 /* Pods-PTTApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTApp.debug.xcconfig"; path = "Target Support Files/Pods-PTTApp/Pods-PTTApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B09CFEBAC6DCCAD458D62852 /* WatchPTTViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatchPTTViewModel.swift; path = PTTWatch/WatchPTTViewModel.swift; sourceTree = "<group>"; };
+		B1346E5EF1A7272978B729CD /* PTTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C3D4E5F6071819A2B3C4D5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6071819A2B3C4D6 /* LocationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModels.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6071819A2B3C4D7 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6071819A2B3C4D9 /* LocationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTabView.swift; sourceTree = "<group>"; };
+		B2C3D4E5F6071819A2B3C4DA /* CallsignTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsignTagsView.swift; sourceTree = "<group>"; };
+		BCF01C81DCDF3ADF4D9D0F61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3D4E5F6071819A2B3C4DB /* UpdateAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAlertView.swift; sourceTree = "<group>"; };
+		C3D4E5F6071819A2B3C4DC /* AppUpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateService.swift; sourceTree = "<group>"; };
+		D65842C82F248865006BDE2A /* PTTLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PTTLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65842C92F248865006BDE2A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D65842CB2F248865006BDE2A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D9DFEFDFBD187390C9E21D6B /* PTTMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTMainView.swift; sourceTree = "<group>"; };
+		DF24A45AFC22E8A24E1C90F1 /* PTTCodec */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PTTCodec; path = Packages/PTTCodec; sourceTree = SOURCE_ROOT; };
+		EB1443E6C8EE524AE16A5C7D /* PTTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTApp.swift; sourceTree = "<group>"; };
+		EB8B9BBA7F9BFD82EE75C38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		LA001AA1B2C3D4E5F6071819 /* PTTActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTActivityAttributes.swift; sourceTree = "<group>"; };
+		LA002AA1B2C3D4E5F6071819 /* PTTLiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTLiveActivityService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D65842DF2F248866006BDE2A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D65842C72F248865006BDE2A /* PTTLiveActivityExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D65842CD2F248865006BDE2A /* PTTLiveActivity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D65842DF2F248866006BDE2A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PTTLiveActivity; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65842C52F248865006BDE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65842CC2F248865006BDE2A /* SwiftUI.framework in Frameworks */,
+				D65842CA2F248865006BDE2A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7ED976DD7A329D93A144398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AEBDD98EAAB8A1C68DAB64E /* Foundation.framework in Frameworks */,
+				3464CC33250C95B6AA769B14 /* WatchConnectivity.framework in Frameworks */,
+				0CACB15521D2F21024F8B3DA /* WatchKit.framework in Frameworks */,
+				2DCA6977C1DD8E8FD11247CC /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF419DCFC000F57AA67D8858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5ED3BBEEDD47B69C58ED674 /* PTTCodec in Frameworks */,
+				4BCC788DE9DAF6113C93598D /* PTTInfra in Frameworks */,
+				1E13286FCFB2B8D1AFA4F8AD /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1369425752E09E434F397BB0 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				1F7B42370398A334ABE96D05 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		34560F6299C7BCE7165EF343 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B9BBA7F9BFD82EE75C38A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		411EEEDAA05E5E4E165C05FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1346E5EF1A7272978B729CD /* PTTApp.app */,
+				D65842C82F248865006BDE2A /* PTTLiveActivityExtension.appex */,
+				1F07095222D405F1005E8B90 /* PTTWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A48351845EEA3E4485101A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCF01C81DCDF3ADF4D9D0F61 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "PTTWatch/Preview Content";
+			sourceTree = "<group>";
+		};
+		630FC9542E11524AA92C8090 /* WatchConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				3ED7DB2C611018B1E7E1D028 /* WatchSessionManager.swift */,
+			);
+			name = WatchConnectivity;
+			path = Shared/WatchConnectivity;
+			sourceTree = "<group>";
+		};
+		B49ABB7B3A26BFCB0E82917B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D65842C92F248865006BDE2A /* WidgetKit.framework */,
+				D65842CB2F248865006BDE2A /* SwiftUI.framework */,
+				1369425752E09E434F397BB0 /* watchOS */,
+				8C7D8F70403C1FAB6C6AAA8A /* WatchConnectivity.framework */,
+				86064E9108705A5F65856BCF /* WatchKit.framework */,
+				5DD01A61C9C5C4660839753B /* AVFoundation.framework */,
+				10BEA5B977FEEF93AE94F2F8 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86BA63B4B23EE4754ABCDE6 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DF24A45AFC22E8A24E1C90F1 /* PTTCodec */,
+				602101E12421B32FCB44F963 /* PTTInfra */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		D842B89493DCAD102CC1E78E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2C3D4E5F6071819A2B3C4D5 /* AboutView.swift */,
+				B2C3D4E5F6071819A2B3C4DA /* CallsignTagsView.swift */,
+				B2C3D4E5F6071819A2B3C4D6 /* LocationModels.swift */,
+				B2C3D4E5F6071819A2B3C4D7 /* LocationService.swift */,
+				B2C3D4E5F6071819A2B3C4D9 /* LocationTabView.swift */,
+				D9DFEFDFBD187390C9E21D6B /* PTTMainView.swift */,
+				C3D4E5F6071819A2B3C4DB /* UpdateAlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D942B89493DCAD102CC1E79F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3D4E5F6071819A2B3C4DC /* AppUpdateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E0A0EBA2A05DFB6ABA5FF45A /* PTTWatch */ = {
+			isa = PBXGroup;
+			children = (
+				507F5ED0A32464C9ECCCFCF9 /* PTTWatchApp.swift */,
+				32C6A78F021C555EA784E790 /* ContentView.swift */,
+				B09CFEBAC6DCCAD458D62852 /* WatchPTTViewModel.swift */,
+				5E8993DC36D11E548630A1BD /* WatchAudioManager.swift */,
+				2EE47E97108C76A8A16D1712 /* Assets.xcassets */,
+				5A48351845EEA3E4485101A3 /* Preview Content */,
+				2D43D036296FA0AC0378A725 /* Info.plist */,
+			);
+			path = PTTWatch;
+			sourceTree = "<group>";
+		};
+		E25CDF88E9D62837990FE513 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				LA005AA1B2C3D4E5F6071819 /* LiveActivity */,
+				FD7A4F16FAC847262CF7E7E8 /* ViewModels */,
+				630FC9542E11524AA92C8090 /* WatchConnectivity */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EEDB7D67831E949FBAB29D47 = {
+			isa = PBXGroup;
+			children = (
+				B86BA63B4B23EE4754ABCDE6 /* Packages */,
+				FD2190078BE9556613F54C19 /* PTTApp-SwiftUI */,
+				E25CDF88E9D62837990FE513 /* Shared */,
+				D65842CD2F248865006BDE2A /* PTTLiveActivity */,
+				411EEEDAA05E5E4E165C05FE /* Products */,
+				F8CAB571103970D11D15BAEC /* Pods */,
+				B49ABB7B3A26BFCB0E82917B /* Frameworks */,
+				E0A0EBA2A05DFB6ABA5FF45A /* PTTWatch */,
+			);
+			sourceTree = "<group>";
+		};
+		F8CAB571103970D11D15BAEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D0AC8D5ABB2C8B08AACDB99 /* Pods-PTTApp.debug.xcconfig */,
+				12E6A734BE9C73D17EFB4F57 /* Pods-PTTApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD2190078BE9556613F54C19 /* PTTApp-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				000D1DFF889E483C607F76D8 /* Info.plist */,
+				96EDB3560605921C5BF40C41 /* PTTApp.entitlements */,
+				EB1443E6C8EE524AE16A5C7D /* PTTApp.swift */,
+				34560F6299C7BCE7165EF343 /* Resources */,
+				D942B89493DCAD102CC1E79F /* Services */,
+				D842B89493DCAD102CC1E78E /* Views */,
+			);
+			path = "PTTApp-SwiftUI";
+			sourceTree = "<group>";
+		};
+		FD7A4F16FAC847262CF7E7E8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83612A19C307200BB7F6B114 /* PTTViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		LA005AA1B2C3D4E5F6071819 /* LiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				LA001AA1B2C3D4E5F6071819 /* PTTActivityAttributes.swift */,
+				LA002AA1B2C3D4E5F6071819 /* PTTLiveActivityService.swift */,
+			);
+			path = LiveActivity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCFABA2EA50FAE2D0E9A970E /* PTTApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F926150B7E3667465CF94322 /* Build configuration list for PBXNativeTarget "PTTApp" */;
+			buildPhases = (
+				808B92845F7CD53D4982FE04 /* [CP] Check Pods Manifest.lock */,
+				90737D5B1CB1629A9CF9295C /* Sources */,
+				85CA83C342278A6B514D2AD0 /* Resources */,
+				EF419DCFC000F57AA67D8858 /* Frameworks */,
+				D65842DC2F248866006BDE2A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65842DA2F248866006BDE2A /* PBXTargetDependency */,
+			);
+			name = PTTApp;
+			packageProductDependencies = (
+				7E396BE9728EC38C06AD87CA /* PTTCodec */,
+				30A264DDE54D9728C7B816A0 /* PTTInfra */,
+			);
+			productName = PTTApp;
+			productReference = B1346E5EF1A7272978B729CD /* PTTApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D65842C72F248865006BDE2A /* PTTLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65842E02F248866006BDE2A /* Build configuration list for PBXNativeTarget "PTTLiveActivityExtension" */;
+			buildPhases = (
+				D65842C42F248865006BDE2A /* Sources */,
+				D65842C52F248865006BDE2A /* Frameworks */,
+				D65842C62F248865006BDE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D65842CD2F248865006BDE2A /* PTTLiveActivity */,
+			);
+			name = PTTLiveActivityExtension;
+			productName = PTTLiveActivityExtension;
+			productReference = D65842C82F248865006BDE2A /* PTTLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E03CBC2A5496431837E3D1B2 /* PTTWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2304BF6817A6AACD047C8D /* Build configuration list for PBXNativeTarget "PTTWatch" */;
+			buildPhases = (
+				64CA15EC336ECE51A6963886 /* Sources */,
+				D7ED976DD7A329D93A144398 /* Frameworks */,
+				925A4855791B0364BF09261E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTTWatch;
+			productName = PTTWatch;
+			productReference = 1F07095222D405F1005E8B90 /* PTTWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D9CD220A9810C74E3A772E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					D65842C72F248865006BDE2A = {
+						CreatedOnToolsVersion = 26.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C2A50F177C17264B37479FAB /* Build configuration list for PBXProject "PTTApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EEDB7D67831E949FBAB29D47;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0552C42696461A95EB810D6C /* XCLocalSwiftPackageReference "Packages/PTTCodec" */,
+				75EE9E289F7E09C01D3A55CC /* XCLocalSwiftPackageReference "Packages/PTTInfra" */,
+			);
+			productRefGroup = 411EEEDAA05E5E4E165C05FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCFABA2EA50FAE2D0E9A970E /* PTTApp */,
+				D65842C72F248865006BDE2A /* PTTLiveActivityExtension */,
+				E03CBC2A5496431837E3D1B2 /* PTTWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85CA83C342278A6B514D2AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90953B14280E5321B9257D4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925A4855791B0364BF09261E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B7690C3F4DCC62137C88954 /* Assets.xcassets in Resources */,
+				0EFF6B9DB36C0248BB85C0AD /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65842C62F248865006BDE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		808B92845F7CD53D4982FE04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTTApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64CA15EC336ECE51A6963886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39EB11B4FB8786CB31091EC8 /* PTTWatchApp.swift in Sources */,
+				5EDC591B424339D109A4B928 /* ContentView.swift in Sources */,
+				E9311566E125E1FA05442AAA /* WatchPTTViewModel.swift in Sources */,
+				A78BD4D3B7D7C6190389E20B /* WatchAudioManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90737D5B1CB1629A9CF9295C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F60718192A3B4C /* AboutView.swift in Sources */,
+				A1B2C3D4E5F60718192A3B53 /* AppUpdateService.swift in Sources */,
+				A1B2C3D4E5F60718192A3B51 /* CallsignTagsView.swift in Sources */,
+				A1B2C3D4E5F60718192A3B4D /* LocationModels.swift in Sources */,
+				A1B2C3D4E5F60718192A3B4E /* LocationService.swift in Sources */,
+				A1B2C3D4E5F60718192A3B50 /* LocationTabView.swift in Sources */,
+				AC5527C35E66DE9ED91847FD /* PTTApp.swift in Sources */,
+				LA003AA1B2C3D4E5F6071819 /* PTTActivityAttributes.swift in Sources */,
+				LA004AA1B2C3D4E5F6071819 /* PTTLiveActivityService.swift in Sources */,
+				9818484AC9C0027D0D569373 /* PTTMainView.swift in Sources */,
+				514534535D387B9B75A5E8DE /* PTTViewModel.swift in Sources */,
+				A1B2C3D4E5F60718192A3B52 /* UpdateAlertView.swift in Sources */,
+				5A0EFB6C4DD3657EA2064A0B /* WatchSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65842C42F248865006BDE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D65842DA2F248866006BDE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65842C72F248865006BDE2A /* PTTLiveActivityExtension */;
+			targetProxy = D65842D92F248866006BDE2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		216B3662E6D62883E72CBB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E6A734BE9C73D17EFB4F57 /* Pods-PTTApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PTTApp-SwiftUI/PTTApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7SJ343FY5;
+				INFOPLIST_FILE = "PTTApp-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C4B204DEFAA35883EF6D9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PTTWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.watchapp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		887654CB067F61F04E1B79AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0AC8D5ABB2C8B08AACDB99 /* Pods-PTTApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PTTApp-SwiftUI/PTTApp.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7SJ343FY5;
+				INFOPLIST_FILE = "PTTApp-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CCB36A31543C03B1A478E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		AEBF4B9C895F3A1E4D89D65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PTTWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.watchapp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		D4932DADC07BFFDCF2B579FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		D65842DD2F248866006BDE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 260125002;
+				DEVELOPMENT_TEAM = W939XL26M8;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PTTLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PTTLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.3.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.liveactivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65842DE2F248866006BDE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 260125002;
+				DEVELOPMENT_TEAM = W939XL26M8;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PTTLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PTTLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.3.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.liveactivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F2304BF6817A6AACD047C8D /* Build configuration list for PBXNativeTarget "PTTWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEBF4B9C895F3A1E4D89D65B /* Release */,
+				6C4B204DEFAA35883EF6D9F0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2A50F177C17264B37479FAB /* Build configuration list for PBXProject "PTTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4932DADC07BFFDCF2B579FF /* Debug */,
+				9CCB36A31543C03B1A478E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D65842E02F248866006BDE2A /* Build configuration list for PBXNativeTarget "PTTLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65842DD2F248866006BDE2A /* Debug */,
+				D65842DE2F248866006BDE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F926150B7E3667465CF94322 /* Build configuration list for PBXNativeTarget "PTTApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				887654CB067F61F04E1B79AE /* Debug */,
+				216B3662E6D62883E72CBB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0552C42696461A95EB810D6C /* XCLocalSwiftPackageReference "Packages/PTTCodec" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PTTCodec;
+		};
+		75EE9E289F7E09C01D3A55CC /* XCLocalSwiftPackageReference "Packages/PTTInfra" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PTTInfra;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30A264DDE54D9728C7B816A0 /* PTTInfra */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PTTInfra;
+		};
+		7E396BE9728EC38C06AD87CA /* PTTCodec */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PTTCodec;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3D9CD220A9810C74E3A772E9 /* Project object */;
+}
