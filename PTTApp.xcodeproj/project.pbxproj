@@ -192,7 +192,7 @@
 				3ED7DB2C611018B1E7E1D028 /* WatchSessionManager.swift */,
 			);
 			name = WatchConnectivity;
-			path = Shared/WatchConnectivity;
+			path = WatchConnectivity;
 			sourceTree = "<group>";
 		};
 		B49ABB7B3A26BFCB0E82917B /* Frameworks */ = {
@@ -532,13 +532,13 @@
 				CODE_SIGN_ENTITLEMENTS = "PTTApp-SwiftUI/PTTApp.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q7SJ343FY5;
+				DEVELOPMENT_TEAM = W939XL26M8;
 				INFOPLIST_FILE = "PTTApp-SwiftUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.pttapp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,7 +553,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q7SJ343FY5;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = PTTWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -561,7 +561,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.pttapp.watchapp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SWIFT_VERSION = 5.0;
@@ -578,13 +578,13 @@
 				CODE_SIGN_ENTITLEMENTS = "PTTApp-SwiftUI/PTTApp.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q7SJ343FY5;
+				DEVELOPMENT_TEAM = W939XL26M8;
 				INFOPLIST_FILE = "PTTApp-SwiftUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.pttapp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,7 +659,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q7SJ343FY5;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = PTTWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,7 +667,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.pttapp.watchapp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SWIFT_VERSION = 5.0;
@@ -754,7 +754,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 260125002;
-				DEVELOPMENT_TEAM = W939XL26M8;
+				DEVELOPMENT_TEAM = Q7SJ343FY5;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -772,7 +772,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.3.6;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.liveactivity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.pttapp.liveactivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -795,7 +795,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 260125002;
-				DEVELOPMENT_TEAM = W939XL26M8;
+				DEVELOPMENT_TEAM = Q7SJ343FY5;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PTTLiveActivity/Info.plist;
@@ -809,7 +809,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.3.6;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.ptt.liveactivity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgarlic.pttapp.liveactivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
